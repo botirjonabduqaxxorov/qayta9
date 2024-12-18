@@ -1,0 +1,6 @@
+<h3>Flower Types</h3>
+<ul>
+    {% for type in types %}
+        <li><a href="{% url 'flowers_by_type' type.id %}">{{ type.name }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Flowers{% endblock %}</title>
+</head>
+{% load flower_tags %}
+{% show_types %}
+
+<body>
+    <h1>Flowers Project</h1>
+    <nav>
+        <a href="{% url 'flower_list' %}">Home</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
